@@ -2,7 +2,7 @@
   "name": "@coreui/coreui-free-react-admin-template",
   "version": "4.4.0",
   "description": "CoreUI Free React Admin Template",
-  "homepage": ".",
+  "homepage": "https://ManuelM07.github.io/react-gh-pages",
   "bugs": {
     "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
   },
@@ -13,6 +13,8 @@
   "license": "MIT",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "changelog": "auto-changelog --starting-version 4.4.0 --commit-limit false --hide-credit",
     "eject": "react-scripts eject",
@@ -49,6 +51,7 @@
     "auto-changelog": "~2.4.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^4.0.0",
     "prettier": "2.7.1",
     "react-scripts": "5.0.1",
     "sass": "^1.54.4",
